@@ -28,17 +28,11 @@ Clone the repository
 > Ensure that you have Node JS installed
 
 ```
-https://github.com/Lemon1903/notes-app.git
+git clone https://github.com/Lemon1903/notes-app.git
 
 cd notes-app
 
 npm install
-```
-
-Start the json-server
-
-```
-json-server --watch db.json
 ```
 
 Start the development server
