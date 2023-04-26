@@ -1,0 +1,12 @@
+{
+  "notes": [
+    {
+      "title": "Sample Note",
+      "content": "Hello! Welcome to my Notes App!",
+      "isFavorite": true,
+      "bgcolor": "#FAF29D",
+      "updated": "2023-04-26T21:49:14.251Z",
+      "id": 1
+    }
+  ]
+}
