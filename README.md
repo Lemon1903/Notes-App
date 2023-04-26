@@ -28,7 +28,7 @@ Clone the repository
 > Ensure that you have Node JS installed
 
 ```
-https://github.com/Lemon1903/notes-app.git
+gh clone https://github.com/Lemon1903/notes-app.git
 
 cd notes-app
 
