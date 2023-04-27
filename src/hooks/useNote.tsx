@@ -16,7 +16,7 @@ export function useNote(noteId?: string) {
       return;
     }
 
-    fetch(`http://localhost:3000/notes/${noteId}`)
+    fetch(`https://quartz-colossal-constellation.glitch.me/notes/${noteId}`)
       .then((response) => response.json())
       .then(setNote)
       .catch((err) => {

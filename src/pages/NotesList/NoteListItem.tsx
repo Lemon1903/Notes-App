@@ -17,7 +17,7 @@ export default function NoteListItem(props: INoteListItemProps) {
 
   function handleSetIsFavorite(e: React.MouseEvent) {
     e.preventDefault();
-    fetch(`http://localhost:3000/notes/${note.id}`, {
+    fetch(`https://quartz-colossal-constellation.glitch.me/notes/${note.id}`, {
       method: "PUT",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ ...note, isFavorite: !note.isFavorite }),
