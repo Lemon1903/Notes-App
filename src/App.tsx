@@ -7,7 +7,7 @@ import NotesListPage from "./pages/NotesList/NotesListPage";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="relative flex flex-col border border-body rounded-xl overflow-hidden w-96 h-[85vh] bg-body">
+      <div className="relative flex flex-col border border-body lg:rounded-xl overflow-hidden w-screen lg:w-96 h-screen lg:h-[85vh] bg-body">
         <Routes>
           <Route element={<Header />}>
             <Route path="/" element={<NotesListPage />} />

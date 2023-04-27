@@ -9,7 +9,7 @@ export default function NotesListPage() {
   const { notes, setNotes } = useNotes();
   const searchValue = useSearchValue();
   const pathname = useLocation().pathname;
-  console.log(notes);
+
   if (notes === undefined) {
     return <EmptyMessage message="Loading Notes..." />;
   } else if (notes === null) {
