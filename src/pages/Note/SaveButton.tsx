@@ -12,7 +12,7 @@ export default function SaveButton(props: ISaveButtonProps) {
   const { note, isUpdated } = props;
 
   function handleAction(method: string, id?: string) {
-    fetch(`https://quartz-colossal-constellation.glitch.me/notes${id}`, {
+    fetch(`https://quartz-colossal-constellation.glitch.me/notes/${id}`, {
       method: method,
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ ...note, updated: new Date().toJSON() }),
