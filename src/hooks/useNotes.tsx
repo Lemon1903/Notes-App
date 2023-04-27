@@ -9,6 +9,7 @@ export function useNotes() {
       .then((response) => response.json())
       .then((data: Array<INote>) => {
         const sortedNotes = data.sort(comparingFunction);
+        console.log(notes);
         setNotes(sortedNotes);
       })
       .catch((err) => {
