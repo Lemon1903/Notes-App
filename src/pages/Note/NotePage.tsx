@@ -11,7 +11,9 @@ export default function NotePage() {
   const { note, setNoteValue, isUpdated } = useNote(noteId);
 
   const colors = localStorage.getItem("BG_COLORS");
-  const bg_colors: string[] = colors ? JSON.parse(colors) : ["#FFFFFF"];
+  const bg_colors: string[] = colors
+    ? JSON.parse(colors)
+    : ["#FFFFFF", "#F9D54D", "#E96E5E", "#FAF29D", "#F3E9C6"];
 
   if (note === undefined) {
     return <EmptyMessage message="Loading Note..." />;

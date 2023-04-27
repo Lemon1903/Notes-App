@@ -42,3 +42,35 @@ npm run dev
 ```
 
 Enjoy!
+
+## Live URL:
+
+[https://lemon-notes.netlify.app/](https://lemon-notes.netlify.app/)
+
+> Note: This uses a global database as it doesn't have user authentication. It means that you and the others will share the same data.
+
+If you want to use the local database, clone this repo and go to the following files:
+
+- In `SaveButton.tsx`, change the fetch link to
+
+```typescript
+fetch(`http://localhost:3000/notes/${id}`, ...)
+```
+
+- In `NoteListItem.tsx`, change the fetch link to
+
+```typescript
+fetch(`http://localhost:3000/notes/${note.id}`, ...)
+```
+
+- In `useNotes.tsx`, change the fetch link to
+
+```typescript
+fetch("http://localhost:3000/notes/");
+```
+
+- In `useNote.tsx`, change the fetch link to
+
+```typescript
+fetch(`http://localhost:3000/notes/${noteId}`);
+```
