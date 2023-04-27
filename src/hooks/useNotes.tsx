@@ -5,7 +5,7 @@ export function useNotes() {
   const [notes, setNotes] = useState<INote[] | null | undefined>();
 
   useEffect(() => {
-    fetch("https://quartz-colossal-constellation.glitch.me/notes")
+    fetch("https://quartz-colossal-constellation.glitch.me/notes/")
       .then((response) => response.json())
       .then((data: Array<INote>) => {
         const sortedNotes = data.sort(comparingFunction);
